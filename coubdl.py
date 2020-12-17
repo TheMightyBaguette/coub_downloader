@@ -83,7 +83,7 @@ class CoubDownloader:
         r = requests.get(self.url)
         html = BeautifulSoup(r.text, features="html.parser")
         assert r.status_code == 200
-        cbdata = html.find(id="coubPageCoubJson").get_text()
+        cbdata = html.find(id="coubPageCoubJson").contents[0]
         cbdata = json.loads(cbdata)
         html5 = cbdata["file_versions"]["html5"]
         video = html5["video"]
