@@ -18,5 +18,5 @@ if url is not None:
     dw.merge()
     print("Exiting")
 else:
-    print("Usage : coubdl.exe <url> <loop>")
-    print("Example : coubdl.exe https://coub.com/view/1vpqwl 3")
+    print("Usage : python main.py <url> <loop>")
+    print("Example : python main.py https://coub.com/view/1vpqwl 3")
